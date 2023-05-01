@@ -1,0 +1,170 @@
+* {
+		box-sizing: border-box;
+	}
+	
+	body
+	{
+		font-family: Arial, Helvetica, sans-serif;
+		background-color: #f2f2f2;
+	}
+	
+	.container
+	{
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 20px;
+		background-color: #fff;
+		border-radius: 5px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	}
+	
+	h1
+	{
+		text-align: center;
+	}
+	
+	.calendar-container
+	{
+		display: flex;
+		justify-content: center;
+		margin-bottom: 20px;
+	}
+	
+	.calendar
+	{
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+		width: 300px;
+	}
+	
+	.month
+	{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: #ccc;
+		padding: 10px;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+	}
+	
+	.current-month
+	{
+		font-size: 20px;
+		font-weight: bold;
+	}
+	
+	.prev-month,
+	.next-month
+	{
+		cursor: pointer;
+	}
+	
+	.weekdays
+	{
+		display: flex;
+	}
+	
+	.weekdays div
+	{
+		text-align: center;
+		padding: 10px;
+		width: calc(100% / 7);
+		border-bottom: 1px solid #ccc;
+	}
+	
+	.days
+	{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.days div
+	{
+		text-align: center;
+		padding: 10px;
+		width: calc(100% / 7);
+		border-right: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+		cursor: pointer;
+	}
+	
+	.days div:last-child
+	{
+		border-right: none;
+	}
+	
+	.todo-container form
+	{
+		display: flex;
+		margin-bottom: 10px;
+	}
+	
+	.todo-container label
+	{
+		margin-right: 10px;
+	}
+	
+	.todo-container input[type="text"]
+	{
+		flex-grow: 1;
+		padding: 5px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+	}
+	
+	.todo-container button[type="submit"]
+	{
+		background-color: #4CAF50;
+		color: #fff;
+		border: none;
+		border-radius: 5px;
+		padding: 5px 10px;
+		cursor: pointer;
+	}
+	
+	.todo-container button[type="submit"]:hover
+	{
+		background-color: #3e8e41;
+	}
+	
+	.todo-container ul
+	{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	
+	.todo-container li
+	{
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		padding: 10px;
+		margin-bottom: 10px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	.todo-container li span
+	{
+		flex-grow: 1;
+	}
+	
+	.todo-container li button
+	{
+		background-color: #f44336;
+		color: #fff;
+		border: none;
+		border-radius: 5px;
+		padding: 5px 10px;
+		cursor: pointer;
+		margin-left: 10px;
+	}
+	
+	.todo-container li button:hover
+	{
+		background-color: #da190b;
+		transition: background-color 0.3s ease;
+	}
